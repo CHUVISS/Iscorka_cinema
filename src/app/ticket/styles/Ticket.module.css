@@ -1,0 +1,101 @@
+.container {
+  padding: 0 2rem;
+  background-color: #001f3f; /* Тёмно-синий фон */
+  color: white; /* Белый текст */
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  text-align: center;
+  font-style: italic; /* Курсив */
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Центрируем карточки по горизонтали */
+  max-width: 100%; /* Для поддержки максимальной ширины, если карточки меньше контейнера */
+  margin-top: 3rem;
+}
+
+.card {
+  flex: 0 0 calc(25% - 1rem); /* Примерно 25% ширины для каждой карточки с отступами */
+  margin: 0.5rem; /* Отступ между карточками */
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  position: relative; /* Позиционируем, чтобы относительно него позиционировать изображение */
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+  transform: scale(1.05); /* Увеличение размера карточки при наведении */
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.card .showtime-button {
+  display: inline-block;
+  margin: 0.25rem; /* Увеличен отступ между кнопками */
+  padding: 0.5rem 1rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.card .showtime-button:hover {
+  background-color: #005bb5;
+}
+
+.card .imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Высота по умолчанию */
+  max-height: 100%; /* Максимальная высота для сохранения пропорций */
+  overflow: hidden; /* Обрезаем изображение по границам блока */
+}
+
+.card .posterImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* Плавная анимация трансформации изображения */
+}
+
+.card:hover .posterImage {
+  transform: scale(1.1); /* Увеличение размера изображения при наведении на карточку */
+}

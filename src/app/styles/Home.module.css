@@ -1,0 +1,69 @@
+/* app/styles/Home.module.css */
+
+  .container {
+    min-height: 100vh;
+    background-image: url('https://cinemaplex.ru/wp-content/uploads/2020/04/bc730baf868859c8ea1bf7ada963ce99-optimized.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a2e;
+    color: #fff;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: pulse 1.5s infinite;
+  }
+  
+  .sparkle {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 50%;
+    margin: 20px 0;
+    animation: pulse 1.5s infinite;
+  }
+  
+  .description {
+    font-size: 1.5rem;
+    max-width: 600px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

@@ -1,0 +1,53 @@
+/* app/profile/styles/Profile.module.css */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a2e;
+  color: #fff;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.fullName {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.number {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.ticketList {
+  list-style: none;
+  padding: 0;
+}
+
+.ticket {
+  background-color: #222;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.ticket:hover {
+  transform: scale(1.05);
+}
+
+.ticket p {
+  margin: 5px 0;
+}
